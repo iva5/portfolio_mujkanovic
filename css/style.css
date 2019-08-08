@@ -3,7 +3,11 @@ colors used:
 primary green: #4c941e
 light green: #61be27
 dark green: #2b5511
+background: #ffe4c7
 */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -35,6 +39,9 @@ h4 {
 /* Image */
 img {
   max-width: 100%;
+}
+svg {
+  width: 15%;
 }
 /* Link */
 a {
@@ -77,4 +84,76 @@ a:focus {
   color: #000000 !important;
   border: 2px solid #61be27;
   border-bottom: 2px solid #2b5511;
+}
+/* Layout styling*/
+header {
+  background-color: #ffe4c7;
+  text-align: center;
+  padding-top: 10px;
+  position: fixed;
+  max-width: 100%;
+  box-shadow:  0px 3px 6px 0px rgba(100, 100, 100, 0.5);
+}
+.logo {
+  max-width: 250px;
+}
+nav {
+  display: inline-block;
+  max-width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #014339;
+}
+main {
+  padding-top: 94.2px;
+}
+#hero {
+  background-color: #ffe4c7;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0;
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2b5511;
+}
+h1 {
+  text-align: center;
+}
+#email {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#connect {
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+}
+#connect > ul {
+  list-style-type: none;
+  padding: 0;
+}
+#connect > ul > li {
+  display: inline-block;
+}
+#connect > ul > li > a {
+  padding: 0 30px;
 }
