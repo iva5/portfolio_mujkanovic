@@ -62,30 +62,32 @@ a:focus {
 .button {
   display: inline-block;
   background-color: #4c941e;
-  color: #ffffff !important;
   font-weight: 500;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 3px;
   border-bottom: 2px solid #2b5511;
+  opacity: 1;
   transition: 0.2s opacity;
+}
+#work .button,
+#story .button {
+  color: #ffffff;
 }
 .button:hover,
 .button:focus {
-  background-color: #61be27;
+  opacity: 0.75;
 }
 .button.contact {
   background-color: transparent;
-  color: #000000 !important;
+  color: #000000;
   text-transform: uppercase;
   border: 2px solid #4c941e;
   border-bottom: 2px solid #2b5511;
 }
 .button.contact:hover,
 .button.contact:focus {
-  background-color: #61be27;
-  color: #000000 !important;
-  border: 2px solid #61be27;
-  border-bottom: 2px solid #2b5511;
+  background-color: #4c941e;
+  opacity: 0.75;
 }
 /* Layout styling*/
 header {
@@ -98,10 +100,15 @@ header {
 }
 .logo {
   max-width: 250px;
+  font-size: 1.05em;
 }
-nav {
+nav,
+#hero,
+#email,
+#connect {
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 nav > ul {
   list-style-type: none;
@@ -122,8 +129,6 @@ main {
 #hero {
   background-color: #ffe4c7;
   padding: 10px 0;
-  display: inline-block;
-  width: 100%;
 }
 .container {
   max-width: 1200px;
@@ -135,12 +140,6 @@ main {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #2b5511;
-}
-#email,
-#connect {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
 }
 #connect > ul {
   list-style-type: none;
