@@ -42,8 +42,13 @@ h4 {
 img {
   max-width: 100%;
 }
-svg {
+#connect svg {
   width: 45px;
+}
+#work svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 /* Link */
 a {
@@ -67,7 +72,7 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #2b5511;
   opacity: 1;
-  transition: 0.2s opacity;
+  transition: all 0.2s;
 }
 #work .button,
 #story .button {
@@ -105,10 +110,17 @@ header {
 nav,
 #hero,
 #email,
-#connect {
+#connect,
+#resume {
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+#resume {
+  padding: 15px 0 15px;
+}
+#email {
+  margin: 20px 0;
 }
 nav > ul {
   list-style-type: none;
@@ -129,6 +141,9 @@ main {
 #hero {
   background-color: #ffe4c7;
   padding: 10px 0;
+}
+#hero span {
+  display: block;
 }
 .container {
   max-width: 1200px;
