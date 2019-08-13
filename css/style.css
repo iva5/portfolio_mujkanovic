@@ -170,3 +170,64 @@ main {
   text-align: center;
   margin-top: 40px;
 }
+/* Medium devices (640px and larger) */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 30px 0 30px;
+  }
+  nav {
+    width: auto;
+    float: right;
+  }
+  .navigation {
+    margin: 0;
+  }
+  main {
+    padding-top: 86.4px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px 15px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row h3 {
+    margin: 0;
+  }
+  #skillstools h3 {
+    margin-top: 0;
+  }
+  #skillstools {
+    float: none;
+  }
+}
+/* Large devices (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #skillstools {
+    float: left;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+}
