@@ -128,12 +128,14 @@ nav > ul {
 }
 nav > ul > li {
   display: inline-block;
+  padding-left: 10px;
 }
 nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
   color: #014339;
+  position: relative;
 }
 main {
   padding-top: 94.2px;
@@ -148,6 +150,7 @@ main {
 .container {
   max-width: 1200px;
   padding: 0 15px;
+  clear: both;
 }
 .row {
   margin: 25px 0;
@@ -169,6 +172,16 @@ main {
 #contact h3 {
   text-align: center;
   margin-top: 40px;
+}
+#about #contact h2,
+#skillstools h2 {
+  padding-top: 40px;
+}
+#home h2 {
+  padding: 15px 0;
+}
+#story {
+  background-color: #ffe4c7;
 }
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
@@ -207,11 +220,22 @@ main {
   #skillstools {
     float: none;
   }
+  nav > ul > li {
+    padding-left: 20px;
+  }
+  #contact,
+  #skillstools,
+  .container {
+    clear: both;
+  }
 }
 /* Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
+  }
+  .col-md-6 {
+    width: 100%;
   }
   .col-lg-7 {
     width: 58.33%;
@@ -219,16 +243,31 @@ main {
   .col-lg-5 {
     width: 41.66%;
   }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-8,
+  .col-lg-4,
+  .col-lg-7,
+  .col-lg-5 {
+    padding: 10px 20px;
+  }
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    clear: both;
   }
-  #skillstools {
-    float: left;
+  #profile {
+    padding-top: 60px;
   }
-  .col-md-6 {
-    width: 100%;
+  #about #contact h2,
+  #skillstools h2 {
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 }
 /* Animation */
