@@ -29,32 +29,28 @@
   </header>
   <main>
     <div class="container">
-      <div>
-        <h1>About</h1>
+      <h1>About</h1>
+    </div>
+    <div id="background">
+      <div id="story" class="container">
+        <div id="profile" class="column col-lg-4">
+          <picture>
+            <source srcset="img/profile1x.jpg" media="(max-width:767px)">
+            <source srcset="img/profile2x.jpg" media="(max-width:1023px)">
+            <img src="img/profile3x.jpg" alt="About">
+          </picture>
+        </div>
+        <div class="column col-lg-8">
+          <h2>My Story</h2>
+          <p>As an architect turned UX designer, my goal is to create user-friendly solutions while continuously learning and improving my skills. In my previous experience working in an architecture studio, I've learned the importance of listening to users and identifying their needs and goals as well as integrating users' needs in the design process to create optimal results. I'm aware of the impact of good design and the possibilities to improve quality of life by making right design decisions, and I would like to apply gained knowledge to information technology.</p>
+          <div id="resume">
+            <a href="files/cv.pdf" target="blank" class="button">See my resume</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div>
-        <div>
-          <div id="story">
-            <div id="profile" class="column col-lg-4">
-              <picture>
-                <source srcset="img/profile1x.jpg" media="(max-width:767px)">
-                <source srcset="img/profile2x.jpg" media="(max-width:1023px)">
-                <img src="img/profile3x.jpg" alt="About">
-              </picture>
-            </div>
-            <div class="column col-lg-8">
-              <h2>My Story</h2>
-              <p>As an architect turned UX designer, my goal is to create user-friendly solutions while continuously learning and improving my skills. In my previous experience working in an architecture studio, I've learned the importance of listening to users and identifying their needs and goals as well as integrating users' needs in the design process to create optimal results. I'm aware of the impact of good design and the possibilities to improve quality of life by making right design decisions, and I would like to apply gained knowledge to information technology.</p>
-              <div id="resume">
-                <a href="files/cv.pdf" target="blank" class="button">See my resume</a>
-              </div>
-            </div>
-          </div>
-          <div id="skillstools">
+    <div id="skillstools" class="container">
             <h2>Skills & Tools</h2>
-            <div>
               <div class="column col-md-6 col-lg-7">
                 <h3>Relevant Skills</h3>
                 <ul>
@@ -81,10 +77,6 @@
                   <li>Adobe InDesign</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </main>
   <footer id="contact">
