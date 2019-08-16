@@ -180,8 +180,11 @@ main {
 #home h2 {
   padding: 15px 0;
 }
-#story {
+#background {
+  display: inline-block;
+  width: 100%;
   background-color: #ffe4c7;
+  padding: 20px 0 15px;
 }
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
@@ -256,7 +259,6 @@ main {
     padding: 10px 20px;
   }
   .container {
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
@@ -269,7 +271,9 @@ main {
     padding-top: 80px;
     padding-bottom: 20px;
   }
-}
+  #background {
+    padding-top: 0;
+  }
 /* Animation */
 @keyframes color-change {
   from {fill: #edc655;}
