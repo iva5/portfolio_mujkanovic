@@ -97,17 +97,15 @@ a:focus {
 /* Layout styling*/
 header {
   background-color: #ffe4c7;
-  text-align: center;
-  padding-top: 10px;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   box-shadow:  0px 3px 6px 0px rgba(100, 100, 100, 0.5);
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   font-size: 1.05em;
 }
-nav,
 #hero,
 #email,
 #connect,
@@ -125,10 +123,7 @@ nav,
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
-  padding-left: 10px;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 10px;
@@ -138,7 +133,7 @@ nav > ul > li > a {
   position: relative;
 }
 main {
-  padding-top: 94.2px;
+  padding-top: 47px;
 }
 #hero {
   background-color: #ffe4c7;
@@ -186,6 +181,31 @@ main {
   background-color: #ffe4c7;
   padding: 20px 0 15px;
 }
+/* Hamburger menu */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #fff;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   header {
@@ -196,11 +216,21 @@ main {
     width: auto;
     float: right;
   }
+  nav > ul {
+  margin: 1em 0;
+  }
   .navigation {
     margin: 0;
   }
+  nav > ul > li {
+    display: inline-block;
+    padding-left: 10px;
+  }
   main {
     padding-top: 86.4px;
+  }
+  .logo {
+    max-width: 250px;
   }
   .col-md-6 {
     width: 50%;
@@ -230,6 +260,12 @@ main {
   #skillstools,
   .container {
     clear: both;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
   }
 }
 /* Large devices (1024px or larger) */
