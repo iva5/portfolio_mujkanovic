@@ -13,18 +13,22 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://kit.fontawesome.com/2864b723e5.js"></script>
 </head>
 <body id="project" class="page--project">
   <header>
     <div class="container">
-      <a href="index.html" class="logo">Iva UX/UI Designer</a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="myNavtoggle" class="navtoggle">
+        <a href="index.html" class="logo">Iva UX/UI Designer</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -157,6 +161,7 @@ Every person has different qualities and they need personalized approach that wi
       <p>&copy; Iva Mujkanovic 2019</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
