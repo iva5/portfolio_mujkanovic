@@ -9,3 +9,7 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 }
+function closeMenu() {
+  var x = document.getElementById('myNavtoggle');
+  x.className = 'navtoggle';
+}
