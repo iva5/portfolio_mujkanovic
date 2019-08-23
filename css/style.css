@@ -147,6 +147,9 @@ main {
   padding: 0 15px;
   clear: both;
 }
+#beautyexpert .container {
+  padding: 0 25px;
+}
 .row {
   margin: 25px 0;
 }
@@ -192,7 +195,7 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 20px;
+  font-size: 18px;
   padding-right: 0;
 }
 .navtoggle.responsive nav {
@@ -211,6 +214,9 @@ main {
   header {
     text-align: unset;
     padding: 30px 0 30px;
+  }
+  .navtoggle {
+    padding: 0 15px;
   }
   nav {
     width: auto;
@@ -261,18 +267,14 @@ main {
   .container {
     clear: both;
   }
+  #beautyexpert .container {
+    padding: 0 50px;
+  }
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
   .navtoggle li:last-child {
     display: none;
-  }
-  .navtoggle.responsive nav {
-    padding: 0;
-  }
-  .navtoggle.responsive li {
-    padding: 0 0 0 20px;
-    border-top: none;
   }
 }
 /* Large devices (1024px or larger) */
@@ -316,6 +318,9 @@ main {
   }
   #background {
     padding-top: 0;
+  }
+  #beautyexpert .container {
+    padding: 0 160px;
   }
 /* Animation */
 @keyframes color-change {
