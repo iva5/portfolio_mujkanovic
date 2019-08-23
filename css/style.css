@@ -262,10 +262,17 @@ main {
     clear: both;
   }
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
   .navtoggle li:last-child {
-  display: none;
+    display: none;
+  }
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  .navtoggle.responsive li {
+    padding: 0 0 0 20px;
+    border-top: none;
   }
 }
 /* Large devices (1024px or larger) */
