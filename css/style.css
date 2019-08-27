@@ -139,9 +139,11 @@ header {
   box-shadow:  0px 3px 6px 0px rgba(100, 100, 100, 0.5);
 }
 .logo {
-  max-width: 150px;
+  display: block;
+  max-width: 160px;
   font-size: 1.05em;
   font-family: 'Baloo Chettan', cursive;
+  padding-top: 4px;
 }
 ul {
   padding-left: 20px;
@@ -342,6 +344,10 @@ footer {
     text-align: unset;
     padding: 30px 0 30px;
   }
+  .logo {
+    display: inline-block;
+    padding-top: 0;
+  }
   #aboutme {
     margin: 35px 0;
   }
@@ -351,7 +357,7 @@ footer {
   nav {
     width: auto;
     float: right;
-    padding-top: 5px;
+    padding-top: 4px;
   }
   nav > ul {
   margin: 1em 0;
