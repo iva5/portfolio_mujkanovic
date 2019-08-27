@@ -11,6 +11,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="theme-color" content="#ffffff">
   <script src="https://kit.fontawesome.com/2864b723e5.js"></script>
@@ -19,7 +20,7 @@
   <header>
     <div class="container">
       <div id="myNavtoggle" class="navtoggle">
-        <a href="index.html" class="logo">Iva UX/UI Designer</a>
+        <a href="index.html" class="logo">Iva UX/UI Design</a>
         <nav>
           <ul class="navigation">
             <li><a href="index.html">Home</a></li>
@@ -33,30 +34,62 @@
   </header>
   <main>
     <div id="beautyexpert">
-      <div class="container">
-        <h1>Beauty Expert</h1>
+      <div id="project-picture">
         <picture>
-          <source srcset="img/beautyexpert/beautyexpert1x.jpg" media="(max-width:767px)">
-          <img src="img/beautyexpert/beautyexpert2x.jpg" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/project1x.png" media="(max-width:767px)">
+          <img src="img/beautyexpert/project2x.png" alt="Beauty Expert">
         </picture>
+        <h1>Beauty Expert</h1>
+      </div>
+      <div id="intro" class="container">
         <p>
           Beauty Expert is a web app that quickly connects a user to a beauty specialist through real-time video calls. During the conversation, users explain their problem and receive personalized advice from an expert. Video call can be saved and watched later.
         </p>
       </div>
-      <div class="container">
+      <div id="myprocess">
         <h2>My Process</h2>
-        <picture>
-          <source srcset="img/beautyexpert/process1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/process2x.png" alt="Beauty Expert">
-        </picture>
+        <div id="process" class="flex-container">
+          <div class="item">
+            <a href="#research" class="button button1">01</a>
+            <p>Research</p>
+          </div>
+          <div class="item">
+            <a href="#define" class="button button2">02</a>
+            <p>Define</p>
+          </div>
+          <div class="item">
+            <a href="#ideate" class="button button3">03</a>
+            <p>Ideate</p>
+          </div>
+          <div class="item">
+            <a href="#prototype" class="button button4">04</a>
+            <p>Prototype & Test</p>
+          </div>
+          <div class="item">
+            <a href="#refine" class="button button5">05</a>
+            <p>Refine</p>
+          </div>
+          <div class="item">
+            <a href="#present" class="button button6">06</a>
+            <p>Present</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <p>
           The project was created in 4 months during the UX design course. The design thinking process was applied to the project in order to create user-friendly solutions. Following the principles of the user-centered approach, I performed generative research of the target audience to understand their needs and goals. I implemented the findings into an interactive prototype that was tested by potential users and made iterations based on testing results.
         </p>
-        <h3>01 Research</h3>
+        <h4>The Problem</h4>
         <p>
           We are overwhelmed by fashion and beauty advices on the internet, and still people struggle to find what is the right fit for them. It seems that even though certain makeup style looks amazing on the presented model, when you try to do it yourselves, the outcome is different than expected.
-Every person has different qualities and they need personalized approach that will help them establish their own unique style. Creating an application that quickly connect users with experienced beauty professionals in order to receive beauty advice will help the users create the look they want.
         </p>
+        <h4>The Solution</h4>
+        <p>
+          Every person has different qualities and they need personalized approach that will help them establish their own unique style. Creating an application that quickly connect users with experienced beauty professionals in order to receive beauty advice will help the users create the look they want.
+        </p>
+      </div>
+      <div id="research" class="container">
+        <h3>01 Research</h3>
         <p>
           User interviews were conducted to better understand potential users’ needs and motivations to use online tools in the search for a solution to their style-related problem. The goal of the research was documenting users' opinion about existing online tools that provide an expert answer to the user's question and gathering information about users' expectations when contacting an expert, regarding the type of questions, scheduling and trust in their expertise.
         </p>
@@ -64,9 +97,16 @@ Every person has different qualities and they need personalized approach that wi
           <source srcset="img/beautyexpert/affinitymap1x.png" media="(max-width:767px)">
           <img src="img/beautyexpert/affinitymap2x.png" alt="Beauty Expert">
         </picture>
-        <p>
-          Key insights: Busy schedule doesn’t allow users to spend a lot of time dealing with style-related problems, so they need a short and concise answer to their question. Users want to receive video messages or save video calls so they can watch it again. There is a possibility to advertise products within the app since the users would appreciate recommendations from the experts. To gain trust in their expertise, users need to see expert’s certificates and previous experience as well as the reviews from previous customers. The app should be professional looking, accessible, inexpensive and easy to use.
-        </p>
+        <h4>Key insights</h4>
+        <ul>
+          <li>Busy schedule doesn’t allow users to spend a lot of time dealing with style-related problems, so they need a short and concise answer to their question.</li>
+          <li>Users want to receive video messages or save video calls so they can watch it again.</li>
+          <li>There is a possibility to advertise products within the app since the users would appreciate recommendations from the experts.</li>
+          <li>To gain trust in their expertise, users need to see expert’s certificates and previous experience as well as the reviews from previous customers.</li>
+          <li>The app should be professional looking, accessible, inexpensive and easy to use.</li>
+        </ul>
+      </div>
+      <div id="define" class="container">
         <h3>02 Define</h3>
         <p>
           Based on results of research analysis, I created user personas that represent target audience.
@@ -75,29 +115,37 @@ Every person has different qualities and they need personalized approach that wi
           <source srcset="img/beautyexpert/userpersona1x.png" media="(max-width:767px)">
           <img src="img/beautyexpert/userpersona2x.png" alt="Beauty Expert">
         </picture>
+      </div>
+      <div id="ideate" class="container">
         <h3>03 Ideate</h3>
         <p>
-          User journey and user flow were created to define the most important actions user would do to accomplish their goals using the app.To organize IA structure, I designed a sitemap of the app.
+          User journey and user flow were created to define the most important actions user would do to accomplish their goals using the app. To organize IA structure, I designed a sitemap of the app.
         </p>
         <picture>
           <source srcset="img/beautyexpert/userjourney1x.png" media="(max-width:767px)">
           <img src="img/beautyexpert/userjourney2x.png" alt="Beauty Expert">
         </picture>
         <picture>
-          <source srcset="img/beautyexpert/userflow1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/userflow2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/flow1x.png" media="(max-width:767px)">
+          <img src="img/beautyexpert/flow2x.png" alt="Beauty Expert">
         </picture>
+      </div>
+      <div id="prototype" class="container">
         <h3>04 Prototype & Test</h3>
         <p>
           Using rapid prototyping I created low-fidelity wireframes to demonstrate the key functions of the app. Paper prototype was subjected to usability testing with four participants, which revealed main pain points and frictions. Improvements were implemented in mid-fidelity prototype created based on testing results.
         </p>
         <picture>
-          <source srcset="img/beautyexpert/lowfi1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/lowfi2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/1prototyping1x.png" media="(max-width:767px)">
+          <img src="img/beautyexpert/1prototyping2x.png" alt="Beauty Expert">
         </picture>
         <picture>
-          <source srcset="img/beautyexpert/midfi1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/midfi2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/2prototyping1x.png" media="(max-width:767px)">
+          <img src="img/beautyexpert/2prototyping2x.png" alt="Beauty Expert">
+        </picture>
+        <picture>
+          <source srcset="img/beautyexpert/3prototyping1x.png" media="(max-width:767px)">
+          <img src="img/beautyexpert/3prototyping2x.png" alt="Beauty Expert">
         </picture>
         <p>
           Iterative process led to interactive high-fidelity prototype, created with Adobe Xd and InVision tools. Moderated in-person and remote usability testing with six participants were carried out to test the usability and functionality of the app.
@@ -106,29 +154,34 @@ Every person has different qualities and they need personalized approach that wi
           To organize information gathered in the testing, I used Rainbow spreadsheet. I identified challenges and errors participants made while performing tasks using the app, ranked them by severity and suggested changes.
         </p>
         <picture>
-          <source srcset="img/beautyexpert/1highfi1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/1highfi2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/1highfi1x.jpg" media="(max-width:767px)">
+          <img src="img/beautyexpert/1highfi2x.jpg" alt="Beauty Expert">
         </picture>
         <picture>
-          <source srcset="img/beautyexpert/2highfi1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/2highfi2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/2highfi1x.jpg" media="(max-width:767px)">
+          <img src="img/beautyexpert/2highfi2x.jpg" alt="Beauty Expert">
         </picture>
         <picture>
-          <source srcset="img/beautyexpert/3highfi1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/3highfi2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/3highfi1x.jpg" media="(max-width:767px)">
+          <img src="img/beautyexpert/3highfi2x.jpg" alt="Beauty Expert">
         </picture>
+      </div>
+      <div id="refine" class="container">
         <h3>05 Refine</h3>
         <p>
           As part of refining the design I determined a design language system to maintain consistency in the user interface throughout the app. I applied the guidelines for accessible web content to ensure accessibility of the app.
         </p>
         <picture>
-          <source srcset="img/beautyexpert/userinterface1x.png" media="(max-width:767px)">
-          <img src="img/beautyexpert/userinterface2x.png" alt="Beauty Expert">
+          <source srcset="img/beautyexpert/ui1x.png" media="(max-width:767px)">
+          <img src="img/beautyexpert/ui2x.png" alt="Beauty Expert">
         </picture>
-        <h3>06 Present</h3>
-        <a href="https://invis.io/2ASBX87SHR8" target="_blank">Prototype</a>
       </div>
-      <div class="container">
+      <div id="present" class="container">
+        <h3>06 Present</h3>
+        <div id="mockup">
+        </div>
+      </div>
+      <div id="conclusion" class="container">
         <h2>Conclusion</h2>
         <p>
           Through design process I realized the importance of continuous testing and iterating the prototype according to the testing results. Receiving feedback and solving problems that were identified through research and testing were of great importance in the creation of a product that provides a good user experience.
@@ -136,10 +189,15 @@ Every person has different qualities and they need personalized approach that wi
       </div>
     </div>
   </main>
-  <footer id="contact">
-    <div class="container">
+  <footer>
+    <div id="contact" class="container">
       <h2>Get in touch</h2>
-      <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+385989870110">+385989870110</a> or Skype me at <a href="skype:iva.mujkanovic">iva.mujkanovic</a>. Prefer sending an email?</p>
+      <p>
+        Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+385989870110">+385989870110</a> or Skype me at <a href="skype:iva.mujkanovic">iva.mujkanovic</a>.
+      </p>
+      <p>
+        Prefer sending an email?
+      </p>
       <div id="email">
          <a href="mailto:iva.mujkanovic5gmail.com" class="button contact">Email me</a>
       </div>
@@ -156,8 +214,15 @@ Every person has different qualities and they need personalized approach that wi
               <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Outline_Color_copy_2"><g><path d="M28,1c1.654,0,3,1.346,3,3v24c0,1.654-1.346,3-3,3H4c-1.654,0-3-1.346-3-3V4c0-1.654,1.346-3,3-3H28 M28,0H4    C1.8,0,0,1.8,0,4v24c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V4C32,1.8,30.2,0,28,0L28,0z"/></g><path d="M14.192,15.573c0,0,1.773-0.135,1.773-2.256c0-2.12-1.203-3.165-3.041-3.165l-6.297-0.01v11.715h6.443   c0,0,3.222,0.102,3.222-3.514C16.293,18.343,16.53,15.573,14.192,15.573z M8.971,11.9h3.222c0,0,1.102,0.018,1.102,1.447   c0,1.481-1.102,1.481-1.102,1.481H8.971V11.9z M12.486,20.1H8.971v-3.514h3.514c0,0,1.757,0.018,1.757,1.757   S12.739,20.1,12.486,20.1z" fill="#0BA4E0"/><path d="M21.272,13.071c-4.401,0-4.393,4.393-4.393,4.393s-0.293,4.393,4.393,4.393c0,0,4.1,0,4.1-3.514h-2.343   c0,0,0,1.757-1.757,1.757c0,0-1.757,0-1.757-2.343c0,0,4.686,0,5.857,0C25.372,16.586,25.372,13.071,21.272,13.071z M19.514,16.586   c0,0-0.039-1.757,1.757-1.757c1.795,0,1.757,1.757,1.757,1.757H19.514z" fill="#0BA4E0"/><rect fill="#0BA4E0" height="1.171" width="4.686" x="18.929" y="11.314"/></g></svg>
             </a>
           </li>
+          <li>
+            <a href="https://github.com/iva5/portfolio_mujkanovic" target="_blank">
+              <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Outline_Color_copy_2"><g><path d="M28,1c1.654,0,3,1.346,3,3v24c0,1.654-1.346,3-3,3H4c-1.654,0-3-1.346-3-3V4c0-1.654,1.346-3,3-3H28 M28,0H4    C1.8,0,0,1.8,0,4v24c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V4C32,1.8,30.2,0,28,0L28,0z"/></g><path d="M19.613,25.958h-2.653h-2.656c0,0,0.007-1.575,0-2.656c-3.633,0.782-4.647-1.992-4.647-1.992   c-0.664-1.328-1.328-1.992-1.328-1.992c-1.328-0.789,0-0.664,0-0.664c1.328,0,1.992,1.328,1.992,1.328   c1.165,1.978,3.238,1.66,3.983,1.328c0-0.664,0.291-1.668,0.664-1.992c-2.9-0.327-5.314-1.992-5.314-5.311s0.667-3.983,1.33-4.647   c-0.134-0.327-0.69-1.537,0.021-3.319c0,0,1.305,0,2.632,1.992c0.658-0.658,2.656-0.664,3.32-0.664   c0.663,0,2.661,0.006,3.318,0.664c1.328-1.992,2.636-1.992,2.636-1.992c0.71,1.783,0.155,2.992,0.02,3.319   c0.664,0.664,1.328,1.328,1.328,4.647s-2.411,4.984-5.311,5.311c0.374,0.324,0.664,1.467,0.664,1.992L19.613,25.958L19.613,25.958z   " fill="#0BA4E0" id="Cat_13_"/></g></svg>
+            </a>
+          </li>
         </ul>
       </div>
+    </div>
+    <div id="copyright" class="container">
       <p>&copy; Iva Mujkanovic 2019</p>
     </div>
   </footer>
