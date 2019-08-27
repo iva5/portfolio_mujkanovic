@@ -1,9 +1,11 @@
 /*
 colors used:
-primary green: #4c941e
-light green: #61be27
-dark green: #2b5511
-background: #ffe4c7
+primary green: #6ea9aa
+light green: #c7f0db
+primary purple: #464159
+light purple: #6c7b95
+purple background: #e1e4ea
+green background: #dfecec
 */
 * {
   box-sizing: border-box;
@@ -35,15 +37,17 @@ h3 {
   font-weight: 500;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 500;
+  color: #6b00b3;
+  margin: 0;
 }
 /* Image */
 img {
   max-width: 100%;
 }
 #connect svg {
-  width: 45px;
+  width: 50px;
 }
 #work svg {
   width: 100%;
@@ -52,103 +56,117 @@ img {
 }
 /* Link */
 a {
-  color: #4c941e;
+  color: #464159;
   text-decoration: none;
   font-weight: 500;
 }
-a:visited {
-  color: #2a5511;
-}
 a:hover,
 a:focus {
-  color: #61be27;
+  color: #6c7b95;
 }
 /* Buttons */
-.button {
+[class*="button"] {
   display: inline-block;
-  background-color: #4c941e;
+  background-color: #6ea9aa;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 3px;
-  border-bottom: 2px solid #2b5511;
   opacity: 1;
-  transition: all 0.2s;
+  transition: all 0.3s;
+}
+#home .button,
+#about .button,
+#contact .button {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
 }
 #work .button,
 #story .button {
-  color: #ffffff;
+  color: #fff;
 }
-.button:hover,
-.button:focus {
+#work .button {
+  padding: 10px 15px;
+}
+[class*="button"]:hover,
+[class*="button"]:focus {
   opacity: 0.75;
 }
 .button.contact {
-  background-color: transparent;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
-  border: 2px solid #4c941e;
-  border-bottom: 2px solid #2b5511;
+  border: 2px solid #6ea9aa;
 }
 .button.contact:hover,
 .button.contact:focus {
-  background-color: #4c941e;
-  opacity: 0.75;
+  background-color: #6ea9aa;
+  color: #fff;
 }
-/* Layout styling*/
+/* Process buttons */
+#myprocess [class*="button"] {
+  color: #000;
+  font-size: 1.15em;
+  width: 38px;
+  height: 38px;
+  padding: 4px;
+  margin: 0 6px;
+  border-radius: 50%;
+}
+.button1 {
+  background-color: rgba(107, 0, 179, 0.2);
+}
+.button2 {
+  background-color: rgba(107, 0, 179, 0.3);
+}
+.button3 {
+  background-color: rgba(107, 0, 179, 0.4);
+}
+.button4 {
+  background-color: rgba(107, 0, 179, 0.5);
+}
+.button5 {
+  background-color: rgba(107, 0, 179, 0.6);
+}
+.button6 {
+  background-color: rgba(107, 0, 179, 0.7);
+}
+/* Layout styling */
 header {
-  background-color: #ffe4c7;
+  background-color: #c7f0db;
   padding: 10px 0;
   position: fixed;
+  z-index: 1;
   width: 100%;
   box-shadow:  0px 3px 6px 0px rgba(100, 100, 100, 0.5);
 }
 .logo {
   max-width: 150px;
   font-size: 1.05em;
+  font-family: 'Baloo Chettan', cursive;
+}
+ul {
+  padding-left: 20px;
 }
 #hero,
 #email,
 #connect,
-#resume {
+#resume,
+#processlink {
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 #resume {
-  padding: 15px 0 15px;
-}
-#email {
-  margin: 20px 0;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-nav > ul > li > a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #014339;
-  position: relative;
+  padding: 20px 0;
 }
 main {
   padding-top: 47px;
 }
-#hero {
-  background-color: #ffe4c7;
-  padding: 10px 0;
-}
-#hero span {
-  display: block;
-}
 .container {
   max-width: 1200px;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
   clear: both;
-}
-#beautyexpert .container {
-  padding: 0 25px;
 }
 .row {
   margin: 25px 0;
@@ -156,6 +174,107 @@ main {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #2b5511;
+}
+#work .row:last-child {
+  border-bottom: none;
+}
+p {
+  text-align: justify;
+}
+#work p {
+  margin: 20px 0 28px;
+}
+#connect {
+  padding-bottom: 20px;
+}
+/* Background colors & styling */
+#background {
+  display: inline-block;
+  width: 100%;
+  background-color: #e1e4ea;
+  padding: 20px 0 10px;
+}
+#aboutme {
+  display: inline-block;
+  width: 100%;
+}
+#hero {
+  background-color: #e1e4ea;
+  padding: 10px 0;
+}
+#hero span {
+  display: block;
+}
+/* Title styling */
+#home h2 {
+  padding: 15px 0;
+}
+#contact h3 {
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #2b5511;
+}
+#contact h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+#skillstools h2 {
+  padding: 30px 0 15px;
+}
+/* Nav bar */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li > a {
+  padding: 4px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #464159;
+  position: relative;
+}
+nav > ul > li > a:hover {
+  color: #464159;
+}
+/* Project page */
+#beautyexpert h2,
+#beautyexpert h3,
+#beautyexpert h4 {
+  padding-top: 50px;
+}
+#conclusion {
+  margin-bottom: 40px;
+}
+#beautyexpert p {
+  padding-top: 10px;
+}
+#beautyexpert img {
+  padding: 35px 0 20px;
+}
+#beautyexpert li {
+  padding: 10px 0;
+}
+#project-picture img {
+  padding: 0;
+}
+#project-picture {
+  position: relative;
+  text-align: center;
+}
+#project-picture h1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Contact */
+footer {
+  background-color: #dfecec;
+  padding: 5px;
+  clear: both;
 }
 #connect > ul {
   list-style-type: none;
@@ -165,24 +284,32 @@ main {
   display: inline-block;
 }
 #connect > ul > li > a {
-  padding: 0 15px;
+  padding: 0 20px;
 }
-#contact h3 {
+#contact p {
   text-align: center;
-  margin-top: 40px;
+  padding-bottom: 15px;
 }
-#about #contact h2,
-#skillstools h2 {
-  padding-top: 40px;
+/* Process */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
 }
-#home h2 {
-  padding: 15px 0;
+#myprocess {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#background {
-  display: inline-block;
-  width: 100%;
-  background-color: #ffe4c7;
-  padding: 20px 0 15px;
+#process p {
+  font-size: 0.5em;
+  padding-top: 2px;
+  text-align: center;
+}
+.item {
+  text-align: center;
 }
 /* Hamburger menu */
 .navtoggle li:not(:last-child) {
@@ -215,12 +342,16 @@ main {
     text-align: unset;
     padding: 30px 0 30px;
   }
+  #aboutme {
+    margin: 35px 0;
+  }
   .navtoggle {
     padding: 0 15px;
   }
   nav {
     width: auto;
     float: right;
+    padding-top: 5px;
   }
   nav > ul {
   margin: 1em 0;
@@ -237,6 +368,7 @@ main {
   }
   .logo {
     max-width: 250px;
+    font-size: 1.25em;
   }
   .col-md-6 {
     width: 50%;
@@ -244,6 +376,9 @@ main {
   [class*="col-"] {
     float: left;
     padding: 10px 15px;
+  }
+  #skillstools [class*="col-"] {
+    padding-bottom: 60px;
   }
   .row::after {
     content: "";
@@ -256,25 +391,54 @@ main {
   #skillstools h3 {
     margin-top: 0;
   }
-  #skillstools {
-    float: none;
-  }
   nav > ul > li {
     padding-left: 20px;
   }
   #contact,
-  #skillstools,
   .container {
     clear: both;
   }
+  #hero p,
+  #hero h1 {
+    padding: 0 20px;
+  }
   #beautyexpert .container {
-    padding: 0 50px;
+    padding: 0 30px 30px;
+  }
+  #beautyexpert img {
+    padding-top: 50px;
+  }
+  #project-picture img {
+    padding: 0;
+  }
+  #beautyexpert h3,
+  #beautyexpert h4 {
+    padding-top: 60px;
+  }
+  #beautyexpert h1 {
+    font-size: 3.15em;
   }
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
   .navtoggle li:last-child {
     display: none;
+  }
+  #myprocess {
+    padding: 0 20px;
+  }
+  .flex-container {
+    padding: 30px 0;
+  }
+  #myprocess [class*="button"] {
+    font-size: 2.5em;
+    width: 85px;
+    height: 85px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  #process p {
+    font-size: 0.95em;
   }
 }
 /* Large devices (1024px or larger) */
@@ -303,25 +467,61 @@ main {
   .col-lg-5 {
     padding: 10px 20px;
   }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-  }
   #profile {
-    padding-top: 60px;
-  }
-  #about #contact h2,
-  #skillstools h2 {
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 55px;
   }
   #background {
     padding-top: 0;
   }
   #beautyexpert .container {
-    padding: 0 160px;
+    padding: 0 180px 50px;
   }
+  #skillstools h2 {
+    padding: 50px 0 15px;
+  }
+  #contact h3 {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  #connect {
+    padding-bottom: 30px;
+  }
+  #myprocess {
+    padding: 0 25px;
+  }
+  #beautyexpert img {
+    padding: 80px 0 30px;;
+  }
+  #project-picture {
+    max-width: 1200px;
+    padding: 0 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #project-picture img {
+    padding-top: 0;
+  }
+  #myprocess [class*="button"] {
+    font-size: 3em;
+    width: 120px;
+    height: 120px;
+    padding: 14px;
+    margin: 0 10px;
+  }
+  #process p {
+    font-size: 1.05em;
+    font-weight: 500;
+  }
+  .flex-container {
+    padding: 60px 0;
+  }
+}
+/* Process button hover */
+@media (hover: hover) {
+#myprocess [class*="button"]:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}
 /* Animation */
 @keyframes color-change {
   from {fill: #edc655;}
@@ -345,7 +545,8 @@ main {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 /* Animation-navigation */
-nav > ul > li > a:before {
+@media (hover: hover) {
+  nav > ul > li > a:before {
     position: absolute;
     width: 2px;
     height: 100%;
@@ -355,7 +556,8 @@ nav > ul > li > a:before {
     background: #fff;
     opacity: 0.3;
     transition: all 0.3s;
-}
-nav > ul > li > a:hover:before {
+  }
+  nav > ul > li > a:hover:before {
     width: 100%;
+  }
 }
