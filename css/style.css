@@ -100,15 +100,15 @@ a:focus {
   background-color: #8bbabb;
   font-weight: 500;
   padding: 10px 20px;
-  border-radius: 3px;
+  border-radius: 4px;
   opacity: 1;
   transition: all 0.3s;
 }
 
-#home .button,
-#about .button,
+#work .button,
+#story .button,
 #contact .button {
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
 }
 
 #work .button,
@@ -120,9 +120,49 @@ a:focus {
   padding: 10px 15px;
 }
 
-[class*="button"]:hover,
-[class*="button"]:focus {
+#story .button:hover,
+#story .button:focus,
+#work .button:hover,
+#work .button:focus,
+#contact .button:hover,
+#contact .button:focus {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
   opacity: 0.75;
+}
+
+#button-top {
+  display: inline-block;
+  text-align: center;
+  background-color: #c7f0db;
+  color: #464159;
+  width: 46px;
+  height: 46px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 0 4px 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+}
+
+#button-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button-top:hover {
+  cursor: pointer;
 }
 
 .button.contact {
@@ -261,10 +301,6 @@ p {
 #hero {
   background-color: #e1e4ea;
   padding: 10px 0;
-}
-
-#hero span {
-  display: block;
 }
 
 /* Title styling */
@@ -576,6 +612,13 @@ footer {
   iframe {
     transform: scale(1);
   }
+
+  #button-top {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+  }
 }
 
 /* Large devices (1024px or larger) */
@@ -671,12 +714,19 @@ footer {
   .flex-container {
     padding: 60px 0;
   }
+
+  #button-top {
+    bottom: 40px;
+    right: 40px;
+  }
 }
 
-/* Process button hover */
+/* Button hover */
 @media (hover: hover) {
-  #myprocess [class*="button"]:hover {
+  #myprocess [class*="button"]:hover,
+  #button-top:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
   }
 }
 
