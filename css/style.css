@@ -2,8 +2,8 @@
 colors used:
 primary green: #8bbabb
 light green: #c7f0db
-primary purple: #464159
-light purple: #6c7b95
+primary purple: #261056
+light purple: #431c97
 purple background: #e1e4ea
 green background: #dfecec
 */
@@ -230,7 +230,7 @@ header {
   max-width: 160px;
   font-size: 1.25em;
   font-family: 'Sniglet', cursive;
-  color: #464159;
+  color: #261056;
   padding-top: 3px;
 }
 
@@ -340,12 +340,12 @@ nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #464159;
+  color: #261056;
   position: relative;
 }
 
 nav > ul > li > a:hover {
-  color: #464159;
+  color: #261056;
 }
 
 /* Project page */
@@ -555,9 +555,12 @@ footer {
     clear: both;
   }
 
-  #hero p,
-  #hero h1 {
+  #hero p {
     padding: 0 20px;
+  }
+
+  #hero h1 {
+    padding: 0 80px;
   }
 
   #beautyexpert .container {
