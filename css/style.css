@@ -2,8 +2,8 @@
 colors used:
 primary green: #8bbabb
 light green: #c7f0db
-primary purple: #261056
-light purple: #391881
+primary purple: #464159
+light purple: #6c7b95
 purple background: #e1e4ea
 green background: #dfecec
 */
@@ -85,19 +85,14 @@ img {
 
 /* Link */
 a {
-  color: #391881;
+  color: #464159;
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover,
 a:focus {
-  color: #391881;
-}
-
-#contact a:hover,
-#contact a:focus {
-  font-weight: 600;
+  color: #6c7b95;
 }
 
 /* Buttons */
@@ -105,7 +100,7 @@ a:focus {
   display: inline-block;
   background-color: #8bbabb;
   color: #000;
-  padding: 10px 20px;
+  padding: 12px 18px;
   border-radius: 4px;
   opacity: 1;
   transition: all 0.3s;
@@ -118,8 +113,8 @@ a:focus {
   color: #000;
 }
 
-#work .button {
-  padding: 10px 15px;
+#contact .button {
+  padding: 10px 20px;
 }
 
 #story .button:hover,
@@ -137,7 +132,7 @@ a:focus {
   display: inline-block;
   text-align: center;
   background-color: #c7f0db;
-  color: #261056;
+  color: #464159;
   width: 46px;
   height: 46px;
   position: fixed;
@@ -230,7 +225,7 @@ header {
   max-width: 160px;
   font-size: 1.25em;
   font-family: 'Sniglet', cursive;
-  color: #261056;
+  color: #464159;
   padding-top: 3px;
 }
 
@@ -314,14 +309,14 @@ p {
 
 #contact h3 {
   text-align: center;
-  padding-top: 40px;
-  margin-top: 40px;
-  border-top: 1px solid #2b5511;
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #464159;
 }
 
 #contact h2 {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   margin: 0;
 }
 
@@ -340,12 +335,12 @@ nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #261056;
+  color: #464159;
   position: relative;
 }
 
 nav > ul > li > a:hover {
-  color: #261056;
+  color: #464159;
 }
 
 /* Project page */
@@ -410,7 +405,7 @@ footer {
 
 #contact p {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 /* Process */
