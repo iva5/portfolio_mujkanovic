@@ -3,7 +3,7 @@ colors used:
 primary green: #8bbabb
 light green: #c7f0db
 primary purple: #261056
-light purple: #431c97
+light purple: #391881
 purple background: #e1e4ea
 green background: #dfecec
 */
@@ -85,14 +85,14 @@ img {
 
 /* Link */
 a {
-  color: #431c97;
+  color: #391881;
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover,
 a:focus {
-  color: #431c97;
+  color: #391881;
 }
 
 #contact a:hover,
@@ -137,7 +137,7 @@ a:focus {
   display: inline-block;
   text-align: center;
   background-color: #c7f0db;
-  color: #464159;
+  color: #261056;
   width: 46px;
   height: 46px;
   position: fixed;
