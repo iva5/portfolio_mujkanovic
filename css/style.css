@@ -299,7 +299,7 @@ p {
 
 #hero {
   background-color: #dfecec;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 /* Title styling */
@@ -404,7 +404,6 @@ footer {
 }
 
 #contact p {
-  text-align: center;
   padding-bottom: 30px;
 }
 
@@ -482,6 +481,14 @@ footer {
     margin: 25px 0;
   }
 
+  #hero {
+    padding: 10px 0 40px;
+  }
+
+  #hero h1 {
+    padding: 0 20px 10px;
+  }
+
   .navtoggle {
     padding: 0 15px;
   }
@@ -554,10 +561,6 @@ footer {
     padding: 0 20px;
   }
 
-  #hero h1 {
-    padding: 0 80px;
-  }
-
   #beautyexpert .container {
     padding: 0 30px 30px;
   }
@@ -607,6 +610,10 @@ footer {
     font-size: 0.95em;
   }
 
+  #contact p {
+    text-align: center;
+  }
+
   #mockup {
     padding-top: 80px;
     height: 100%;
@@ -628,6 +635,10 @@ footer {
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
+  }
+
+  #hero h1 {
+    padding: 10px 80px;
   }
 
   .col-md-6 {
