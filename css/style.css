@@ -353,7 +353,8 @@ nav > ul > li > a:hover {
 
 #lingo h2,
 #lingo h3 {
-  padding: 60px 0 10px;
+  padding-top: 50px;
+  margin-top: 0;
 }
 
 #conclusion {
@@ -400,6 +401,12 @@ nav > ul > li > a:hover {
   text-align: center;
   font-weight: 300;
   padding: 10px 0;
+}
+
+#lingo-process {
+  background-color: #f1f2f2;
+  padding-bottom: 20px;
+  margin-top: 40px;
 }
 
 /* Contact */
@@ -601,16 +608,16 @@ footer {
     font-size: 3.15em;
   }
 
-  #lingo-process h2 {
-    padding-top: 10px;
-  }
-
   #description p {
     padding: 10px 0 40px;
   }
 
   #intro-lingo p {
-    padding: 20px 0;
+    padding-top: 20px;
+  }
+
+  #lingo-process {
+    margin-top: 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -730,7 +737,7 @@ footer {
   }
 
   #beautyexpert img {
-    padding: 80px 0 30px;
+    padding: 70px 0 30px;
   }
 
   #lingo img {
@@ -743,6 +750,14 @@ footer {
 
   #lingo h3 {
     padding: 100px 0 20px;
+  }
+
+  #beautyexpert h3 {
+    padding-bottom: 20px;
+  }
+
+  #lingo-process {
+    padding: 20px 0;
   }
 
   #description p {
