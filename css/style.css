@@ -247,8 +247,12 @@ ul {
   padding: 20px 0;
 }
 
+#skillstools {
+  padding-bottom: 40px;
+}
+
 main {
-  padding-top: 47px;
+  padding-top: 50px;
 }
 
 .container {
@@ -284,17 +288,18 @@ p {
   padding-bottom: 20px;
 }
 
+#aboutme img {
+  border-radius: 50%;
+  padding: 0 15px;
+}
+
 /* Background colors & styling */
 #background {
   display: inline-block;
   width: 100%;
   background-color: #e1e4ea;
-  padding: 20px 0 10px;
-}
-
-#aboutme {
-  display: inline-block;
-  width: 100%;
+  padding: 10px 0 20px;
+  margin-top: 35px;
 }
 
 #hero {
@@ -315,7 +320,7 @@ p {
 }
 
 #contact h2 {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -503,18 +508,6 @@ footer {
     padding-top: 0;
   }
 
-  #aboutme {
-    margin: 25px 0;
-  }
-
-  #hero {
-    padding: 10px 0 40px;
-  }
-
-  #hero h1 {
-    padding: 0 20px 10px;
-  }
-
   .navtoggle {
     padding: 0 15px;
   }
@@ -543,6 +536,18 @@ footer {
     font-size: 1.05em;
   }
 
+  nav > ul > li {
+    padding-left: 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   main {
     padding-top: 80px;
   }
@@ -551,13 +556,17 @@ footer {
     width: 50%;
   }
 
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 10px 15px;
-  }
-
-  #skillstools [class*="col-"] {
-    padding-bottom: 60px;
   }
 
   .row::after {
@@ -570,23 +579,61 @@ footer {
     margin: 0;
   }
 
-  #skillstools h3 {
-    margin-top: 0;
-  }
-
-  nav > ul > li {
-    padding-left: 20px;
-  }
-
   #contact,
   .container {
     clear: both;
+  }
+
+  #contact p {
+    text-align: center;
+  }
+
+  #contact h2 {
+    padding-top: 60px;
+  }
+
+  #button-top {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  /* Home page */
+  #hero {
+    padding: 10px 0 40px;
+  }
+
+  #hero h1 {
+    padding: 0 20px 10px;
   }
 
   #hero p {
     padding: 0 20px;
   }
 
+  /* About page */
+  #background {
+    padding: 25px 15px 30px;
+  }
+
+  #about h1 {
+    margin-top: 40px;
+  }
+
+  #aboutme img {
+    padding: 20px 120px;
+  }
+
+  #skillstools [class*="col-"] {
+    padding-bottom: 50px;
+  }
+
+  #skillstools h3 {
+    margin-top: 0;
+  }
+
+  /* Project page */
   #beautyexpert .container,
   #lingo .container {
     padding: 0 30px 30px;
@@ -620,14 +667,6 @@ footer {
     margin-top: 0;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
   #myprocess {
     padding: 0 20px;
   }
@@ -648,10 +687,6 @@ footer {
     font-size: 0.95em;
   }
 
-  #contact p {
-    text-align: center;
-  }
-
   #mockup {
     padding-top: 80px;
     height: 100%;
@@ -660,27 +695,12 @@ footer {
   iframe {
     transform: scale(1);
   }
-
-  #button-top {
-    width: 50px;
-    height: 50px;
-    bottom: 30px;
-    right: 30px;
-  }
 }
 
 /* Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
-  }
-
-  #hero h1 {
-    padding: 10px 80px;
-  }
-
-  .col-md-6 {
-    width: 100%;
   }
 
   .col-lg-7 {
@@ -691,45 +711,56 @@ footer {
     width: 41.66%;
   }
 
-  .col-lg-8 {
-    width: 66.66%;
+  .col-lg-6 {
+    width: 50%;
   }
 
-  .col-lg-4 {
-    width: 33.33%;
-  }
-
-  .col-lg-8,
-  .col-lg-4,
+  .col-lg-6,
   .col-lg-7,
   .col-lg-5 {
     padding: 10px 20px;
   }
 
+  /* Home page */
+  #hero h1 {
+    padding: 10px 80px;
+  }
+
+  /* About page */
   #profile {
     padding-top: 55px;
   }
 
   #background {
-    padding-top: 0;
+    padding: 40px 15px;
+    margin-top: 40px;
   }
 
-  #beautyexpert .container,
-  #lingo .container {
-    padding: 0 180px 50px;
+  #aboutme {
+    text-align: center;
+  }
+
+  #aboutme img {
+    max-width: 60%;
+  }
+
+  #story,
+  #skillstools {
+    padding: 0 100px;
   }
 
   #skillstools h2 {
-    padding: 50px 0 15px;
+    padding: 50px 0 20px;
   }
 
-  #contact h3 {
-    padding-top: 50px;
-    margin-top: 50px;
+  #story-text {
+    padding: 5px 0 15px;
   }
 
-  #connect {
-    padding-bottom: 30px;
+  /* Project page */
+  #beautyexpert .container,
+  #lingo .container {
+    padding: 0 180px 50px;
   }
 
   #myprocess {
@@ -790,6 +821,16 @@ footer {
 
   .flex-container {
     padding: 60px 0;
+  }
+
+  /* Contact */
+  #contact h3 {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+
+  #connect {
+    padding-bottom: 30px;
   }
 
   #button-top {
