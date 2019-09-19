@@ -276,10 +276,6 @@ main {
   border-bottom: none;
 }
 
-p {
-  text-align: justify;
-}
-
 #work p {
   margin: 20px 0 28px;
 }
@@ -601,15 +597,16 @@ footer {
 
   /* Home page */
   #hero {
-    padding: 10px 0 40px;
+    padding: 25px 0 50px;
   }
 
   #hero h1 {
-    padding: 0 20px 10px;
+    padding: 0 20px 20px;
   }
 
   #hero p {
     padding: 0 20px;
+    text-align: left;
   }
 
   /* About page */
@@ -723,7 +720,7 @@ footer {
 
   /* Home page */
   #hero h1 {
-    padding: 10px 80px;
+    padding: 10px 80px 20px;
   }
 
   /* About page */
