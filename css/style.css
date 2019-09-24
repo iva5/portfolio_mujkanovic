@@ -53,7 +53,6 @@ h4 {
 }
 
 /* Prototype */
-
 #mockup {
   text-align: center;
   padding-top: 30px;
@@ -264,11 +263,11 @@ main {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 #work .row {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #464159;
 }
 
@@ -277,7 +276,7 @@ main {
 }
 
 #work p {
-  margin: 20px 0 28px;
+  margin: 20px 0 25px;
 }
 
 #connect {
@@ -325,6 +324,10 @@ main {
   padding: 30px 0 15px;
 }
 
+#hero p {
+  text-align: left;
+}
+
 /* Nav bar */
 nav > ul {
   list-style-type: none;
@@ -345,7 +348,6 @@ nav > ul > li > a:hover {
 }
 
 /* Project page */
-
 #beautyexpert h2,
 #beautyexpert h3,
 #beautyexpert h4 {
@@ -353,7 +355,8 @@ nav > ul > li > a:hover {
 }
 
 #lingo h2,
-#lingo h3 {
+#lingo h3,
+#portfolio h2 {
   padding-top: 50px;
   margin-top: 0;
 }
@@ -366,6 +369,10 @@ nav > ul > li > a:hover {
   padding-top: 10px;
 }
 
+#testing ul {
+  padding: 20px 0 10px 15px;
+}
+
 #beautyexpert img {
   padding: 35px 0 20px;
 }
@@ -374,7 +381,8 @@ nav > ul > li > a:hover {
   padding-top: 15px;
 }
 
-#prototype-test-repeat img {
+#prototype-test-repeat img,
+#solution img {
   padding: 25px 0;
 }
 
@@ -386,7 +394,8 @@ nav > ul > li > a:hover {
   padding: 0;
 }
 
-#project-picture {
+#project-picture,
+#portfolio-project-picture {
   position: relative;
   text-align: center;
 }
@@ -396,6 +405,13 @@ nav > ul > li > a:hover {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#portfolio-project-picture h1 {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-10%, -50%);
 }
 
 #description p {
@@ -408,6 +424,18 @@ nav > ul > li > a:hover {
   background-color: #f1f2f2;
   padding-bottom: 20px;
   margin-top: 40px;
+}
+
+#portfolio-process,
+#solution {
+  background-color: rgba(191, 214, 246, 0.4);
+  padding-bottom: 20px;
+  margin: 40px 0 20px;
+}
+
+#portfolio-illustration img {
+  width: 100%;
+  padding: 20px 0 10px;
 }
 
 /* Contact */
@@ -552,6 +580,10 @@ footer {
     width: 50%;
   }
 
+  #work .col-lg-5 {
+    padding-top: 5px;
+  }
+
   .col-md-5 {
     width: 41.66%;
   }
@@ -606,7 +638,6 @@ footer {
 
   #hero p {
     padding: 0 20px;
-    text-align: left;
   }
 
   /* About page */
@@ -632,8 +663,15 @@ footer {
 
   /* Project page */
   #beautyexpert .container,
-  #lingo .container {
+  #lingo .container,
+  #portfolio .container {
     padding: 0 30px 30px;
+  }
+
+  #portfolio-process,
+  #solution {
+    padding: 10px 0;
+    margin: 20px 0;
   }
 
   #beautyexpert img {
@@ -646,6 +684,14 @@ footer {
 
   #prototype-test-repeat img {
     padding: 40px 0;
+  }
+
+  #solution img {
+    padding-top: 60px;
+  }
+
+  #portfolio-illustration img {
+    padding-bottom: 35px;
   }
 
   #project h1 {
@@ -723,6 +769,14 @@ footer {
     padding: 10px 80px 20px;
   }
 
+  #work .col-lg-5 {
+    padding-top: 10px;
+  }
+
+  #work p {
+    padding: 15px 0;
+  }
+
   /* About page */
   #profile {
     padding-top: 55px;
@@ -756,8 +810,16 @@ footer {
 
   /* Project page */
   #beautyexpert .container,
-  #lingo .container {
+  #lingo .container,
+  #portfolio .container {
     padding: 0 180px 50px;
+  }
+
+  #portfolio-project-picture h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #myprocess {
@@ -774,6 +836,18 @@ footer {
 
   #prototype-test-repeat img {
     padding: 60px 0;
+  }
+
+  #solution img {
+    padding-top: 80px;
+  }
+
+  #portfolio-illustration img {
+    padding-bottom: 60px;
+  }
+
+  #portfolio h2 {
+    padding-top: 60px;
   }
 
   #lingo h3 {
@@ -801,6 +875,10 @@ footer {
 
   #project-picture img {
     padding-top: 0;
+  }
+
+  #portfolio-project-picture img {
+    width: 100%;
   }
 
   #myprocess [class*="button"] {
