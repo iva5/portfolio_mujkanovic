@@ -377,6 +377,10 @@ nav > ul > li > a:hover {
   padding: 35px 0 20px;
 }
 
+#refine img {
+  padding-bottom: 35px;
+}
+
 #lingo img {
   padding-top: 15px;
 }
@@ -678,6 +682,10 @@ footer {
     padding-top: 50px;
   }
 
+  #refine img {
+    padding-bottom: 50px;
+  }
+
   #project-picture img {
     padding: 0;
   }
@@ -828,6 +836,10 @@ footer {
 
   #beautyexpert img {
     padding: 70px 0 30px;
+  }
+
+  #refine img {
+    padding-bottom: 80px;
   }
 
   #lingo img {
