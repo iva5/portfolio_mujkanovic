@@ -651,8 +651,8 @@ footer {
   #portfolio-project-picture h1 {
     position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 45%;
+    transform: translate(-40%, -50%);
   }
 
   #beautyexpert img {
@@ -679,8 +679,9 @@ footer {
     padding: 45px 0;
   }
 
-  #project-picture h1 {
-    font-size: 3.15em;
+  #project-picture h1,
+  #portfolio-project-picture h1 {
+    font-size: 3.25em;
   }
 
   #beautyexpert h3,
@@ -749,7 +750,11 @@ footer {
 
   /* Home page */
   #hero h1 {
-    padding: 10px 80px 20px;
+    padding: 20px 80px 50px;
+  }
+
+  #hero {
+    padding: 25px 0 75px;
   }
 
   #work .col-lg-5 {
