@@ -416,12 +416,6 @@ nav > ul > li > a:hover {
   transform: translate(-10%, -50%);
 }
 
-.description p {
-  text-align: center;
-  font-weight: 300;
-  padding: 0 0 20px;
-}
-
 #portfolio-illustration img {
   width: 100%;
   padding: 15px 0 0;
@@ -695,10 +689,6 @@ footer {
     font-size: 1.75em;
   }
 
-  .description p {
-    padding: 10px 0 40px;
-  }
-
   #myprocess {
     padding: 0 20px;
   }
@@ -835,7 +825,7 @@ footer {
   }
 
   #lingo img {
-    padding: 40px 0;
+    padding: 40px 0 60px;
   }
 
   #prototype-test-repeat img {
@@ -868,10 +858,6 @@ footer {
 
   #conclusion {
     margin-bottom: 55px;
-  }
-
-  .description p {
-    padding: 0 0 60px;
   }
 
   #project-picture img,
