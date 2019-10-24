@@ -307,7 +307,7 @@ main {
 #hero {
   height: 100vh;
   width: 100vw;
-  padding-top: 70px;
+  padding-top: 60px;
   text-align: center;
   color: #d7f4e5;
   background-color: #6c7b95;
@@ -315,14 +315,14 @@ main {
 }
 
 .h {
-  font-size: 2.95em;
-  font-weight: 600;
-  padding: 20px 25px;
+  font-size: 2.75em;
+  font-weight: 500;
+  padding: 25px 50px;
 }
 
 .h:last-of-type {
-  font-size: 2.25em;
-  font-weight: 400;
+  font-size: 2em;
+  font-weight: 300;
 }
 
 #contact h3 {
@@ -631,8 +631,11 @@ footer {
     padding-top: 300px;
   }
 
+  .h {
+    padding: 5px 0;
+  }
+
   .h:first-of-type {
-    padding: 0;
     font-size: 3.75em;
     animation: showup 10s;
   }
