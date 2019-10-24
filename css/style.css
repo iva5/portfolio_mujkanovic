@@ -20,6 +20,11 @@ body {
   color: #000;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* Typography */
 h1,
 h2,
@@ -212,7 +217,7 @@ a:focus {
 /* Layout styling */
 header {
   background-color: #c7f0db;
-  padding: 10px 0;
+  padding: 9px 0 10px;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -222,10 +227,9 @@ header {
 .logo {
   display: block;
   max-width: 160px;
-  font-size: 1.25em;
-  font-family: 'Sniglet', cursive;
+  font-size: 1.15em;
   color: #464159;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 ul {
@@ -235,11 +239,14 @@ ul {
 #email,
 #connect,
 #resume,
-#processlink,
-#hero-text {
+#processlink {
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+
+#work {
+  padding-top: 50px;
 }
 
 #resume {
@@ -268,11 +275,6 @@ main {
 
 #work .row {
   padding-bottom: 30px;
-  border-bottom: 1px solid #464159;
-}
-
-#work .row:last-child {
-  border-bottom: none;
 }
 
 #work p {
@@ -299,12 +301,28 @@ main {
 
 /* Title styling */
 #home h2 {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
-#hero h1 {
-  font-size: 2.5em;
-  padding-bottom: 5px;
+#hero {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 70px;
+  text-align: center;
+  color: #d7f4e5;
+  background-color: #6c7b95;
+  margin: 0;
+}
+
+.h {
+  font-size: 2.95em;
+  font-weight: 600;
+  padding: 20px 25px;
+}
+
+.h:last-of-type {
+  font-size: 2.25em;
+  font-weight: 400;
 }
 
 #contact h3 {
@@ -324,18 +342,14 @@ main {
   padding: 30px 0 15px;
 }
 
-#hero p {
-  text-align: left;
-}
-
 /* Nav bar */
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
@@ -343,7 +357,7 @@ nav > ul > li > a {
   position: relative;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #464159;
 }
 
@@ -392,14 +406,12 @@ nav > ul > li > a:hover {
 }
 
 #project-picture img,
-#portfolio-project-picture img,
-#hero img {
+#portfolio-project-picture img {
   padding: 0;
 }
 
 #project-picture,
-#portfolio-project-picture,
-#hero {
+#portfolio-project-picture {
   position: relative;
   text-align: center;
 }
@@ -418,13 +430,6 @@ nav > ul > li > a:hover {
   transform: translate(-10%, -50%);
 }
 
-#hero-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 #portfolio-illustration img {
   width: 100%;
   padding: 15px 0 0;
@@ -437,16 +442,16 @@ footer {
   clear: both;
 }
 
-#connect > ul {
+#connect>ul {
   list-style-type: none;
   padding: 0;
 }
 
-#connect > ul > li {
+#connect>ul>li {
   display: inline-block;
 }
 
-#connect > ul > li > a {
+#connect>ul>li>a {
   padding: 0 15px;
 }
 
@@ -515,14 +520,14 @@ footer {
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 25px 0;
+    padding: 20px 0;
   }
 
   .logo {
     display: inline-block;
     max-width: 250px;
     padding-top: 0;
-    font-size: 1.35em;
+    font-size: 1.25em;
   }
 
   .navtoggle {
@@ -532,10 +537,10 @@ footer {
   nav {
     width: auto;
     float: right;
-    padding-top: 4px;
+    padding-top: 3px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -543,14 +548,14 @@ footer {
     margin: 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     padding-left: 10px;
   }
 
-  nav > ul > li > a {
+  nav>ul>li>a {
     padding: 4px 15px;
-    font-size: 1.15em;
+    font-size: 1.1em;
   }
 
   .navtoggle li:not(:last-child) {
@@ -562,7 +567,7 @@ footer {
   }
 
   main {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .col-md-6 {
@@ -601,12 +606,16 @@ footer {
     clear: both;
   }
 
+  footer {
+    margin-top: 50px;
+  }
+
   #contact p {
     text-align: center;
   }
 
   #contact h2 {
-    padding-top: 60px;
+    padding-top: 70px;
   }
 
   #button-top {
@@ -617,19 +626,38 @@ footer {
   }
 
   /* Home page */
-  #hero-text {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  #hero {
+    padding-top: 300px;
   }
 
-  #hero h1 {
-    padding: 0 20px 20px;
+  .h:first-of-type {
+    padding: 0;
+    font-size: 3.75em;
+    animation: showup 10s;
   }
 
-  #hero p {
-    padding: 0 20px;
+  .h:last-of-type {
+    font-size: 2.95em;
+    opacity: 0;
+    animation: showup 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:1;}
+  }
+
+  #work {
+    padding-top: 70px;
+  }
+
+  #work h2 {
+    padding: 20px;
   }
 
   /* About page */
@@ -738,7 +766,7 @@ footer {
     font-size: 18px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     padding-left: 30px;
   }
 
@@ -761,10 +789,6 @@ footer {
   }
 
   /* Home page */
-  #hero h1 {
-    padding: 30px 80px;
-    font-size: 3em;
-  }
 
   #work .col-lg-5 {
     padding-top: 10px;
@@ -772,6 +796,14 @@ footer {
 
   #work p {
     padding: 15px 0;
+  }
+
+  .h:first-of-type {
+    font-size: 4.35em;
+  }
+
+  .h:last-of-type {
+    font-size: 3.25em;
   }
 
   /* About page */
@@ -801,6 +833,10 @@ footer {
     padding: 50px 0 20px;
   }
 
+  #skillstools [class*="col-"] {
+    padding-bottom: 70px;
+  }
+
   #story-text {
     padding: 5px 0 15px;
   }
@@ -812,8 +848,7 @@ footer {
     padding: 0 180px 40px;
   }
 
-  #portfolio-project-picture h1,
-  #hero-text {
+  #portfolio-project-picture h1 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -914,8 +949,63 @@ footer {
   }
 }
 
+/* XL devices (1440px or larger) */
+
+@media only screen and (min-width: 1440px) {
+  /* Animation-headline */
+  #hero {
+    padding-top: 260px;
+  }
+
+  .h {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .h:first-of-type {
+    animation: showup 10s;
+    animation-fill-mode: forwards;
+    font-size: 2.6em;
+  }
+
+  .h:last-of-type {
+    animation: reveal 8s;
+    animation-fill-mode: forwards;
+    padding: 0;
+    font-size: 2.6em;
+  }
+
+  .h:last-of-type span {
+    margin-left: -800px;
+    animation: slidein 8s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:1;}
+  }
+
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:700px;}
+      100% {opacity:1;width:700px;}
+  }
+}
+
 /* Button hover */
 @media (hover: hover) {
+
   #myprocess [class*="button"]:hover,
   #button-top:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -925,19 +1015,20 @@ footer {
 
 /* Animation-navigation */
 @media (hover: hover) {
-  nav > ul > li > a::before {
+  nav>ul>li>a::before {
     position: absolute;
+    z-index: -1;
     width: 2px;
     height: 100%;
     left: 0;
     top: 0;
     content: '';
     background: #fff;
-    opacity: 0.3;
+    opacity: 0.4;
     transition: all 0.3s;
   }
 
-  nav > ul > li > a:hover::before {
+  nav>ul>li>a:hover::before {
     width: 100%;
   }
 }

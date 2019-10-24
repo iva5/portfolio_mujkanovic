@@ -14,6 +14,7 @@ function closeMenu () {
   x.className = 'navtoggle'
 }
 
+// back to top button
 var btn = $('#button-top')
 
 $(window).scroll(function () {
