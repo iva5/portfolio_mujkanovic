@@ -112,7 +112,7 @@ a:focus {
 
 #work .button,
 #story .button {
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #contact .button {
@@ -283,7 +283,7 @@ main {
 #background {
   display: inline-block;
   width: 100%;
-  background-color: #e1e4ea;
+  background-color: #a6afbf;
   padding: 10px 0 20px;
   margin-top: 35px;
 }
@@ -412,14 +412,14 @@ nav>ul>li>a:hover {
 
 /* Contact */
 footer {
-  background-color: #dfecec;
+  background-color: #cfe2e2;
   height: 100vh;
   position: relative;
   clear: both;
 }
 
 #contact h2 {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 20px;
   margin: 0;
 }
@@ -610,19 +610,22 @@ footer {
 
   footer {
     margin-top: 50px;
-    height: 520px;
+    height: 480px;
   }
 
   #connect>ul {
-    margin-top: 40px;
+    margin: 30px 0 18px;
   }
 
   #contact h2 {
-    padding-top: 60px;
+    padding-top: 70px;
   }
 
   #copyright p {
-    margin-bottom: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 25px;
   }
 
   #button-top {
@@ -822,7 +825,7 @@ footer {
   }
 
   #background {
-    padding: 40px 15px;
+    padding: 40px 15px 50px;
     margin-top: 40px;
   }
 
@@ -942,13 +945,6 @@ footer {
   .flex-container {
     padding: 50px 0;
   }
-
-  /* Contact */
-
-  #button-top {
-    bottom: 40px;
-    right: 40px;
-  }
 }
 
 /* XL devices (1440px or larger) */
@@ -1010,11 +1006,25 @@ footer {
   }
 
   #contact h2 {
-    padding-top: 160px;
+    padding-top: 180px;
+    font-size: 2.5em;
   }
 
   #contact p {
     padding: 10px 0 30px;
+  }
+
+  #copyright p {
+    margin: 28px 60px;
+  }
+
+  #connect>ul {
+    margin: 34px 0 26px;
+  }
+
+  #button-top {
+    bottom: 40px;
+    right: 40px;
   }
 }
 
