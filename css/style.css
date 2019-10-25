@@ -419,7 +419,7 @@ footer {
 }
 
 #contact h2 {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 20px;
   margin: 0;
 }
@@ -440,7 +440,7 @@ footer {
 #connect>ul {
   list-style-type: none;
   padding: 0;
-  margin: 45px 0 20px;
+  margin: 30px 0 15px;
 }
 
 #connect>ul>li {
@@ -448,7 +448,7 @@ footer {
 }
 
 #connect>ul>li>a {
-  padding: 0 10px;
+  padding: 0 8px;
   opacity: 0.75;
 }
 
@@ -611,6 +611,10 @@ footer {
   footer {
     margin-top: 50px;
     height: 520px;
+  }
+
+  #connect>ul {
+    margin-top: 40px;
   }
 
   #contact h2 {
