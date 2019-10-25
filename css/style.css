@@ -1015,15 +1015,15 @@ footer {
   }
 
   #copyright p {
-    margin: 28px 60px;
+    margin-left: 60px;
   }
 
   #connect>ul {
-    margin: 34px 0 26px;
+    margin: 34px 0 24px;
   }
 
   #button-top {
-    bottom: 40px;
+    bottom: 35px;
     right: 40px;
   }
 }
