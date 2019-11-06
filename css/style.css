@@ -963,14 +963,15 @@ footer {
   .h:first-of-type {
     animation: showup 10s;
     animation-fill-mode: forwards;
-    font-size: 2.6em;
+    padding: 0;
+    font-size: 2.55em;
   }
 
   .h:last-of-type {
     animation: reveal 8s;
     animation-fill-mode: forwards;
     padding: 0;
-    font-size: 2.6em;
+    font-size: 2.55em;
   }
 
   .h:last-of-type span {
@@ -996,8 +997,8 @@ footer {
   @keyframes reveal {
       0% {opacity:0;width:0px;}
       20% {opacity:1;width:0px;}
-      30% {width:700px;}
-      100% {opacity:1;width:700px;}
+      30% {width:685px;}
+      100% {opacity:1;width:685px;}
   }
 
   /* contact */
