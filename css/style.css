@@ -594,6 +594,10 @@ footer {
     color: #464159;
   }
 
+  .navbar-fixed a:hover {
+    color: #464159;
+  }
+
   .navbar-fixed.scrolled a:hover {
     color: #6c7b95;
   }
