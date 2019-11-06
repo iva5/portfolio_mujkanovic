@@ -376,8 +376,16 @@ nav>ul>li>a:hover {
   padding: 15px 0 10px;
 }
 
-#beautyexpert li {
+#research li {
   padding: 10px 0;
+}
+
+#prototype ul {
+  padding-left: 60px;
+}
+
+#prototype li {
+  padding: 5px 0;
 }
 
 #project-picture img,
@@ -713,7 +721,7 @@ footer {
   }
 
   #prototype img {
-    padding: 20px 0 25px;
+    padding: 15px 0;
   }
 
   #project-picture img {
@@ -876,7 +884,7 @@ footer {
   }
 
   #prototype img {
-    padding-top: 40px;
+    padding: 35px 0;
   }
 
   #refine img {
