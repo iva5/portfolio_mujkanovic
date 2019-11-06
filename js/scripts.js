@@ -29,3 +29,11 @@ btn.on('click', function (e) {
   e.preventDefault()
   $('html, body').animate({ scrollTop: 0 }, '500')
 })
+
+// navbar-hero
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $('.navbar-fixed')
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height())
+  })
+})

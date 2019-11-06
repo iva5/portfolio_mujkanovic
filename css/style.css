@@ -222,7 +222,6 @@ header {
   display: block;
   max-width: 160px;
   font-size: 1.15em;
-  color: #464159;
   padding-top: 4px;
 }
 
@@ -305,7 +304,7 @@ main {
 .h {
   font-size: 2.75em;
   font-weight: 500;
-  padding: 25px 30px;
+  padding: 25px 50px;
 }
 
 .h:last-of-type {
@@ -328,7 +327,6 @@ nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #464159;
   position: relative;
 }
 
@@ -576,8 +574,40 @@ footer {
     display: none;
   }
 
+  .navbar-fixed {
+    background-color: transparent;
+    color: #c7f0db;
+    box-shadow: none;
+  }
+
+  .navbar-fixed.scrolled {
+    background-color: #c7f0db;
+    box-shadow: 0 3px 6px 0 rgba(100, 100, 100, 0.5);
+    transition: background-color 200ms linear;
+  }
+
+  .navbar-fixed a {
+    color: #c7f0db;
+  }
+
+  .navbar-fixed.scrolled a {
+    color: #464159;
+  }
+
+  .navbar-fixed.scrolled a:hover {
+    color: #6c7b95;
+  }
+
+  .navbar-fixed.scrolled nav>ul>li>a:hover {
+    color: #464159;
+  }
+
   main {
     padding-top: 70px;
+  }
+
+  #home main {
+    padding-top: 0;
   }
 
   .col-md-6 {
@@ -646,7 +676,7 @@ footer {
   /* Home page */
 
   #hero {
-    padding-top: 300px;
+    padding-top: 340px;
   }
 
   .h {
@@ -952,7 +982,7 @@ footer {
 @media only screen and (min-width: 1440px) {
   /* Animation-headline */
   #hero {
-    padding-top: 260px;
+    padding-top: 310px;
   }
 
   .h {
@@ -964,18 +994,18 @@ footer {
     animation: showup 10s;
     animation-fill-mode: forwards;
     padding: 0;
-    font-size: 2.55em;
+    font-size: 2.7em;
   }
 
   .h:last-of-type {
     animation: reveal 8s;
     animation-fill-mode: forwards;
     padding: 0;
-    font-size: 2.55em;
+    font-size: 2.7em;
   }
 
   .h:last-of-type span {
-    margin-left: -800px;
+    margin-left: -700px;
     animation: slidein 8s;
     animation-fill-mode: forwards;
   }
@@ -988,8 +1018,8 @@ footer {
   }
 
   @keyframes slidein {
-      0% { margin-left:-800px; }
-      20% { margin-left:-800px; }
+      0% { margin-left:-700px; }
+      20% { margin-left:-700px; }
       35% { margin-left:0px; }
       100% { margin-left:0px; }
   }
@@ -997,8 +1027,8 @@ footer {
   @keyframes reveal {
       0% {opacity:0;width:0px;}
       20% {opacity:1;width:0px;}
-      30% {width:685px;}
-      100% {opacity:1;width:685px;}
+      30% {width:656px;}
+      100% {opacity:1;width:656px;}
   }
 
   /* contact */
@@ -1056,5 +1086,13 @@ footer {
 
   nav>ul>li>a:hover::before {
     width: 100%;
+  }
+
+  .navbar-fixed nav>ul>li>a::before {
+    visibility: hidden;
+  }
+
+  .navbar-fixed.scrolled nav>ul>li>a::before {
+    visibility: visible;
   }
 }
