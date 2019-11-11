@@ -416,6 +416,10 @@ nav>ul>li>a:hover {
   padding: 15px 0 0;
 }
 
+#present img {
+  padding: 15px 0;
+}
+
 /* Contact */
 footer {
   background-color: #cfe2e2;
@@ -770,6 +774,10 @@ footer {
     padding: 45px 0;
   }
 
+  #present img {
+    padding: 30px 0 15px;
+  }
+
   #project-picture h1,
   #portfolio-project-picture h1 {
     font-size: 3.25em;
@@ -955,6 +963,10 @@ footer {
 
   #conclusion {
     margin-bottom: 55px;
+  }
+
+  #present img {
+    padding: 30px 0 20px;
   }
 
   #project-picture img,
