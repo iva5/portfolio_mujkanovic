@@ -863,12 +863,20 @@ footer {
     padding: 15px 0;
   }
 
+  #hero {
+    padding-top: 300px;
+  }
+
+  .h {
+    line-height: 1.6;
+  }
+
   .h:first-of-type {
-    font-size: 4.35em;
+    font-size: 3.8em;
   }
 
   .h:last-of-type {
-    font-size: 3.25em;
+    font-size: 3em;
   }
 
   /* About page */
@@ -1005,6 +1013,11 @@ footer {
   /* Animation-headline */
   #hero {
     padding-top: 310px;
+  }
+
+  #hero-text {
+    max-width: 1200px;
+    margin: auto;
   }
 
   .h {
