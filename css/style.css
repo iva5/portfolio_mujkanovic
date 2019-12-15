@@ -329,6 +329,12 @@ main {
   padding: 30px 0 15px;
 }
 
+#vrm h4 {
+  color: #000;
+  line-height: 1.6;
+  padding: 30px 0;
+}
+
 /* Nav bar */
 nav>ul {
   list-style-type: none;
@@ -431,6 +437,11 @@ nav>ul>li>a:hover {
 
 #present img {
   padding: 15px 0;
+}
+
+#animation {
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 /* Contact */
@@ -831,6 +842,14 @@ footer {
   iframe {
     transform: scale(1);
   }
+
+  #vrm h4 {
+    padding: 50px 0;
+  }
+
+  #animation {
+    padding-bottom: 0;
+  }
 }
 
 /* Large devices (1024px or larger) */
@@ -864,11 +883,21 @@ footer {
   /* Home page */
 
   #work .col-lg-5 {
-    padding-top: 10px;
+    padding: 10px 35px 10px 25px;
+  }
+
+  #work .col-lg-7 {
+    padding: 10px 35px;
   }
 
   #work p {
     padding: 15px 0;
+  }
+
+  #work h2 {
+    padding-bottom: 35px;
+    padding-top: 25px;
+    font-size: 2.75em;
   }
 
   #hero {
@@ -1012,6 +1041,21 @@ footer {
 
   .flex-container {
     padding: 50px 0;
+  }
+
+  #vrm {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #animation {
+    padding-bottom: 50px;
+  }
+
+  #vrm h4 {
+    padding-top: 65px;
+    padding-bottom: 55px;
   }
 }
 
