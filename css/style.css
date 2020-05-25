@@ -563,11 +563,12 @@ footer {
     display: inline-block;
     max-width: 250px;
     padding-top: 0;
+    padding-left: 2px;
     font-size: 1.25em;
   }
 
   .navtoggle {
-    padding: 0 15px;
+    padding: 0;
   }
 
   nav {
@@ -1081,14 +1082,14 @@ footer {
     animation: showup 10s;
     animation-fill-mode: forwards;
     padding: 0;
-    font-size: 2.6em;
+    font-size: 2.74em;
   }
 
   .h:last-of-type {
     animation: reveal 8s;
     animation-fill-mode: forwards;
     padding: 0;
-    font-size: 2.6em;
+    font-size: 2.74em;
   }
 
   .h:last-of-type span {
