@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153618792-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-153618792-1', {
+      'anonymize_ip': true
+    });
+  </script>
+  <meta charset="utf-8">
+  <title>Mobile Banking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon1-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon1-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://kit.fontawesome.com/2864b723e5.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+
+<body class="page--project">
+  <header>
+    <div class="container">
+      <div id="myNavtoggle" class="navtoggle">
+        <a href="index.html" class="logo">Iva UX/UI Design</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="bank25">
+      <!--
+      <div id="project-picture">
+        <picture>
+          <source srcset="img/lingo/lingocover1x.jpg" media="(max-width:767px)">
+          <source srcset="img/lingo/lingocover2x.jpg" media="(max-width:1023px)">
+          <img src="img/lingo/lingocover3x.jpg" alt="www.freepik.com">
+        </picture>
+      </div>
+      -->
+      <h1>Mobile Banking App</h1>
+      <div class="container">
+        <h3>Summary</h3>
+        <p>
+          The challenge was to design the app that allows users to enjoy benefits of internet banking on their mobile devices. This product brings value to the users because it simplifies banking processes and allows users to have a control over
+          their financial activities at any time and place. Users depend less on physical places and tools such as branches, ATMs, and credit cards.
+        </p>
+      </div>
+      <div id="lingo-process" class="container">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Hybrid mobile app.</li>
+          <li>User has the possibility to have multiple accounts.</li>
+          <li>Latest promotions of banking services, contact details and currency exchange rates are available even before registration.</li>
+          <li>Throughout the app the user has the possibility to start money transfer.</li>
+        </ul>
+      </div>
+      <div class="container">
+        <h3>Design Process</h3>
+        <div>
+          <h4>Competitive Analysis</h4>
+          <p>
+            To find out more about the existing products and services, I performed competitive analysis of four mobile banking providers.
+          </p>
+          <p>
+            Key takeaways:
+          </p>
+          <ul>
+            <li>Both traditional and digital banks offer a broad range of banking services for use on mobile devices, and completely digitalizing banking experience could lead to simpler processes and increase customer satisfaction.</li>
+            <li>Because of the large number of features, appropriate grouping and focusing on navigation could improve the usability of the product.</li>
+            <li>Complexity of the banking processes should be explained in the plain language. Additional information as well as the contact to the customer support should be available.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>The Users</h4>
+          <p>
+            A user of the mobile banking app can be any member of the bank with the mobile device. To find out more about users’ needs and requirements, I performed interviews with five potential users. Research results revealed two groups of
+            users:
+          </p>
+          <ul>
+            <li>
+              Younger audience <br> Mostly use banking services on their mobile phones. The most important to them is to easily pay in the store or to transfer money to the friends’ account. They often carry only mobile phone and don’t want to depend on
+              using credit cards or ATMs. They often need to pay with cash so it’s important to have a convenient way to withdraw cash at any time.
+            </li>
+            <li>
+              Long-term users <br> Members of this bank for several years that already have more than one account. They use multiple services, like savings and loans. The main activities they perform is a bank transfer, creating regular payments and
+              reviewing their account activity.
+            </li>
+          </ul>
+          </div>
+          <div class="separated">
+          <p>
+            After identifying users’ needs, I wrote users stories that will define the tasks expressed as a benefit to the end-user.
+          </p>
+          <div class="user-stories">
+            <p>
+              As a user, I need a quick and safe access to my bank account, so that I can review my account activity.
+            </p>
+            <p>
+              As a user, I need a possibility to use only my mobile phone in order to pay in the store.
+            </p>
+            <p>
+              As a user, I need to transfer money to my friend’s account, so that we could split the bill in the restaurant.
+            </p>
+            <p>
+              As a user, I need to find the closest location to withdraw cash, so that I could make a cash payment when I don’t have other payment possibility.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h4>The Concept</h4>
+          <p>
+            The task analysis was created for the bank transfer as one of the main banking services.
+          </p>
+          <ul>
+            <li>Open the app</li>
+            <li>Log in</li>
+            <li>Review balance</li>
+            <li>Create new bank transfer</li>
+            <li>Select the account</li>
+            <li>Enter recipient’s data</li>
+            <li>Select the amount</li>
+            <li>Review the transaction</li>
+            <li>Confirm transaction</li>
+            <li>Receive confirmation of transaction status</li>
+          </ul>
+          <p>
+            Based on the defined steps, I created the low-fidelity wireframes. The paper prototype that represents the bank transfer and the cash withdrawal flows was tested with five participants so that usability issues could be determined in the early stage.
+          </p>
+          <picture>
+            <source srcset="img/onlinebanking/wireframes.png" media="(max-width:767px)">
+            <img src="img/onlinebanking/wireframes.png" alt="Prototype">
+          </picture>
+          <p>
+            Key insights from usability testing:
+          </p>
+          <ul>
+            <li>Grouping a big number of features in the tab bar confuses users and they would like to have a more prominent link to main action - payment.</li>
+            <li>Users need to see all features displayed at one place.</li>
+            <li>The possiblity to create a standing order is missing.</li>
+          </ul>
+          <p>
+            In the further iterations I addressed those issues and created high-fidelity prototype.
+          </p>
+        </div>
+        <div id="design">
+          <h4>User Interface Design</h4>
+          <picture>
+            <source srcset="img/onlinebanking/flow1.png" media="(max-width:767px)">
+            <img src="img/onlinebanking/flow1.png" alt="Prototype">
+          </picture>
+          <p>
+            Welcome page offers the possibility to log into the app as well as several features that are available without logging in. Options to find the ATM locations, review currency exchange rates, find out about latest promotions and contact the
+            customer service are available even for the unregistered users.
+          </p>
+          <p>
+            On the Home screen, the user has an overview of all his accounts. By selecting the specific account, the latest transactions are shown.
+          </p>
+          <p>
+            Based on users’ feedback, I determined the hamburger menu as the main navigation that contains links to all features of the app. Floating button is a secondary menu that contains payment actions as the most used features of the app.
+          </p>
+          <picture>
+            <source srcset="img/onlinebanking/flow2.png" media="(max-width:767px)">
+            <img src="img/onlinebanking/flow2.png" alt="Prototype">
+          </picture>
+          <p>
+            At the beginning of a bank transfer, the users select from which account they want to transfer the money. They enter the recipient’s information or select from the list of favorite recipients. A user confirms the action and receives a
+            confirmation message.
+          </p>
+          <picture>
+            <source srcset="img/onlinebanking/flow3.png" media="(max-width:767px)">
+            <img src="img/onlinebanking/flow3.png" alt="Prototype">
+          </picture>
+          <p>
+            A user can withdraw cash without using credit card or ATM. After selecting GetCash option, a user finds the closest store location, enters the desired amount and selects the duration of the code that is generated by the app. The code has
+            to be shown to the cashier at the point-of-sale, after which a user receives the desired amount in cash.</p>
+        </div>
+      </div>
+      <div id="conclusion" class="container">
+        <h3>Final Thoughts</h3>
+        <p>
+          The prototype represents the main features of the mobile banking app defined based on the business requirements and the needs of the target users. As a next step, I would perform another round of usability testing and propose iterations according to
+          the feedback. Additionally, I would like to design solutions for the edge cases such as insufficient funds on the account or entering wrong data.
+        </p>
+        <p>
+          As a success metric, I would propose number of downloads of the app or number of transactions performed via mobile banking. To measure the success of the GetCash feature, we could see how many times the withdrawal was completed to help us
+          determine if this feature brings value to the users.
+        </p>
+      </div>
+    </div>
+    <div>
+      <a id="button-top" class="button"></a>
+    </div>
+  </main>
+  <footer>
+    <div id="contact" class="container">
+      <h2>Get in touch</h2>
+      <p>
+        Do you like my work and want to discuss opportunities? Please get in touch.
+      </p>
+      <div id="email">
+        <a href="mailto:iva.mujkanovic5gmail.com" class="button contact">Email me</a>
+      </div>
+    </div>
+    <div id="connect">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/iva-mujkanovic-80a8ab18a/" target="_blank">
+            <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M365 1414h231v-694h-231v694zm246-908q-1-52-36-86t-93-34-94.5 34-36.5 86q0 51 35.5 85.5t92.5 34.5h1q59 0 95-34.5t36-85.5zm585 908h231v-398q0-154-73-233t-193-79q-136 0-209 117h2v-101h-231q3 66 0 694h231v-388q0-38 7-56 15-35 45-59.5t74-24.5q116 0 116 157v371zm468-998v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/ivamujkanovic" target="_blank">
+            <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960zm-749 367h-371v787h382q117 0 197-57.5t80-170.5q0-158-143-200 107-52 107-164 0-57-19.5-96.5t-56.5-60.5-79-29.5-97-8.5zm-22 318h-176v-184h163q119 0 119 90 0 94-106 94zm9 335h-185v-217h189q124 0 124 113 0 104-128 104zm650 32q-68 0-104-38t-36-107h411q1-10 1-30 0-132-74.5-220.5t-203.5-88.5q-128 0-210 86t-82 216q0 135 79 217t213 82q205 0 267-191h-138q-11 34-47.5 54t-75.5 20zm-10-366q113 0 124 122h-254q4-56 39-89t91-33zm-162-266h319v77h-319v-77z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/iva5" target="_blank">
+            <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div id="copyright" class="container">
+        <p>&copy; Iva Mujkanovic 2019</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "rgba(75, 85, 104, 0.9)"
+        },
+        "button": {
+          "background": "transparent",
+          "border": "#c7f0db",
+          "text": "#c7f0db"
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
